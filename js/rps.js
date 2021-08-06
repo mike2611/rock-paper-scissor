@@ -36,39 +36,49 @@ buttons.forEach((button) => {
 
 
 function playRound(playerSelection, computerSelection){
-    let message = ` <h3> ${playerSelection} vs ${computerSelection} </h3> <br> <h4>`;
+    let playerPoint = ""
+    let computerPoint = ""
 
     if(playerSelection === "Rock" && computerSelection === "Rock" ){
-        message += "Tie!";
+        computerPoint = "winner";
+        playerPoint = "winner";
     }else if(playerSelection === "Rock" && computerSelection === "Paper"){
-        message += "Computer + 1 point!";
+        computerPoint = "winner";
         computerScore++;
     }else if(playerSelection === "Paper" && computerSelection === "Paper"){
-        message += "Tie!";
+        computerPoint = "winner";
+        playerPoint = "winner";
     }else if(playerSelection === "Paper" && computerSelection === "Scissors"){
-        message += "Computer + 1 point!";
+        computerPoint = "winner";
         computerScore++;
     }else if(playerSelection === "Scissors" && computerSelection === "Scissors"){
-        message += "Tie!";
+        computerPoint = "winner";
+        playerPoint = "winner";
     }else if(playerSelection === "Scissors" && computerSelection === "Rock"){
-        message += "Computer + 1 point!";
+        computerPoint = "winner";
         computerScore++;
     }else{
-        message += "Player + 1 point!";
+        playerPoint = "winner";
         playerScore++;
     }
 
+    let images = ` 
+    <img class="${playerPoint}" src="images/${playerSelection}.png"> 
+    <span> vs </span> 
+    <img class="${computerPoint}" src="images/${computerSelection}.png"> `;
+
    
-    scores(message, computerScore, playerScore);
+    scores(images, computerScore, playerScore);
     
 
 }
 
 
-function scores(message, computerScore, playerScore){
-    result.innerHTML = message + "</h4>";
-    score.innerHTML = `<h3>PlayerScore: ${playerScore}</h3> 
-    <h3>ComputerScore: ${computerScore}</h3>`
+function scores(images, computerScore, playerScore){
+    result.classList.add("vs")
+    result.innerHTML = images;
+    score.innerHTML = `<h3>PlayerScore: ${playerScore}
+    &nbsp;&nbsp;ComputerScore: ${computerScore}</h3>`
 
     if(playerScore === 5|| computerScore === 5){
         finalResult();

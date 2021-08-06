@@ -2,15 +2,26 @@
 <html>
     <head>
 		<link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="css/style.css">
         <title> Rock Paper Scissors</title>
+        <style></style>
     </head>
     <body>
-        <button id="Rock">Rock</button>
-        <button id="Paper">Paper</button>
-        <button id="Scissors">Scissors</button>
+        <header>
+            <h1>
+                <span id="titleRock">Rock</span>
+                <span id="titlePaper" >Paper </span>
+                <span id="titleScissors">Scissors</span>
+            </h1>
+        </header>
+        <div id="score"></div>
+        <div id="selection">
+            <button id="Rock" ><img src="images/Rock.png" alt="rock"></button>
+            <button id="Paper"><img src="images/Paper.png" alt="paper"></button>
+                <button id="Scissors"><img src="images/Scissors.png" alt="scissors"></button>
+        </div>
 
         <div id="result"></div>
-        <div id="score"></div>
         <script src="js/rps.js"></script>
     </body>
 </html>
