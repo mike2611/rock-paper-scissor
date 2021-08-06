@@ -155,12 +155,6 @@ img{
     padding: 0 3% 0 3%;
 }
 
-@media (min-width: 0px) and (max-width: 530px){
- #selection {margin-left: 0;}
- #result {margin-left: 5%;}
-
-}
-
 
 #result span{
     color: rgb(167, 163, 163);
