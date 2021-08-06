@@ -2,6 +2,6 @@
 PROJECT: ROCK PAPER SCISSORS
 FROM ODIN PROJECT
 
-The game results are shown in the console
+Added new user interface
 
 Link -> https://mike2611.github.io/rockPaperScissor/
