@@ -1,183 +1,122 @@
 body {
-	background: rgb(52,50,47);
+  background: rgb(52, 50, 47);
 }
 
 header {
-	display: flex;
-	color: rgb(167, 163, 163);
-	justify-content: center;
+  display: flex;
+  color: rgb(167, 163, 163);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 #titleRock {
-	color: #f48eea;
-	text-shadow:  0 0 1rem #b54097;
+  color: #f48eea;
+  text-shadow: 0 0 1rem #b54097;
 }
 
 #titlePaper {
-	color: #6fcbf3;
-	text-shadow:  0 0 1rem #62a7df;
+  color: #6fcbf3;
+  text-shadow: 0 0 1rem #62a7df;
 }
 
 #titleScissors {
-	color: #f8f563;
-	text-shadow: 0 0 1rem #e0c145;
+  color: #f8f563;
+  text-shadow: 0 0 1rem #e0c145;
 }
 
-
 button {
-	border: none;
-	background-color:#34322f ;
+  border: none;
+  background-color: #34322f;
 }
 
 #score {
-	color: rgb(167, 163, 163);
-	align-content: center;
-	text-align: center;
-	padding-bottom: 10px;
+  color: rgb(167, 163, 163);
+  align-content: center;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 img {
-	border-radius: 20%;     
+  border-radius: 20%;
 }
 
 #Rock img {
-	border:#f48eea solid 2px;
+  border: #f48eea solid 2px;
+}
+
+#Paper img {
+  border: #6fcbf3 solid 2px;
+}
+
+#Scissors img {
+  border: #f8f563 solid 2px;
 }
 
 #Rock img:hover {
-	box-shadow: 0 0 1rem #b54097;
-	cursor: pointer;
-}
-
-#Paper img {
-	border:#6fcbf3 solid 2px;
+  box-shadow: 0 0 1rem #b54097;
+  cursor: pointer;
 }
 
 #Paper img:hover {
-	box-shadow: 0 0 1rem #62a7df;
-	cursor: pointer;
-}
-
-#Scissors img {
-	border:#f8f563 solid 2px;
+  box-shadow: 0 0 1rem #62a7df;
+  cursor: pointer;
 }
 
 #Scissors img:hover {
-	box-shadow: 0 0 1rem #e0c145;
-	cursor: pointer;
+  box-shadow: 0 0 1rem #e0c145;
+  cursor: pointer;
 }
 
 #selection {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
 }
 
 .vs .winner {
-	border: white solid 2px;
-	box-shadow: 0 0 1rem whitesmoke;
+  border: white solid 2px;
+  box-shadow: 0 0 1rem whitesmoke;
 }
 
 #result {
-	display: flex;
-	justify-content: center;
-	color:white; 
-}
-
-body {
-	background-color:#34322f
-}
-
-header {
-	color: rgb(167, 163, 163);
-	align-content: center;
-	text-align: center;
-}
-
-
-button {
-	border: none;
-	background-color:#34322f ;
-}
-
-#score {
-	color: rgb(167, 163, 163);
-	align-content: center;
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-#Rock img {
-	border:#f48eea solid 2px;
-}
-
-#Rock img:hover{
-	box-shadow: 0 0 1rem #b54097;
-	cursor: pointer;
-}
-
-#Paper img {
-	border:#6fcbf3 solid 2px;
-}
-
-#Paper img:hover {
-	box-shadow: 0 0 1rem #62a7df;
-	cursor: pointer;
-}
-
-#Scissors img {
-	border:#f8f563 solid 2px;
-}
-
-#Scissors img:hover {
-	box-shadow: 0 0 1rem #e0c145;
-	cursor: pointer;
-}
-
-.vs .winner {
-	border: white solid 2px;
-	box-shadow: 0 0 1rem whitesmoke;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 #result span {
-	color: rgb(167, 163, 163);
-	font-size: 50px;
-	padding: 0 3% 0 3%;
-}
-
-
-#result span {
-	color: rgb(167, 163, 163);
-	font-size: 50px;
-	padding: 0 3% 0 3%;
+  color: rgb(167, 163, 163);
+  font-size: 50px;
+  padding: 0 3% 0 3%;
 }
 
 .final-result {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: rgba(117, 116, 116, 0.226);
-	text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(117, 116, 116, 0.226);
+  text-align: center;
 }
 
 .final-result h1 {
-	background-color: gray;
-	color: tomato;
-	text-shadow: 0 0 1rem red;
+  background-color: gray;
+  color: tomato;
+  text-shadow: 0 0 1rem red;
 }
 
 .final-result button {
-	font-size: larger;
-	color: white;
-	text-shadow: 0 0 1rem whitesmoke;
-	background-color: gray;
-	border-radius: 20%;
+  font-size: larger;
+  color: white;
+  text-shadow: 0 0 1rem whitesmoke;
+  background-color: gray;
+  border-radius: 20%;
 }
 
-@media (min-width: 0px) and (max-width: 700px) {
-	#selection {text-align: center;}
-	#result {text-align: center; }
-	#score {text-align: center;}
-	header{text-align: center;}
+@media (min-width: 0) and (max-width: 700px) {
+  #selection { text-align: center; }
+  #result { text-align: center; }
+  #score { text-align: center; }
+  header { text-align: center; }
 }
