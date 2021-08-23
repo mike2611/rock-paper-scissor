@@ -3,6 +3,7 @@
 # Rock Paper Scissor
 
 >  I got the idea for this project from The Odin Project.
+>  In this project, you play against the computer a simple game of rock, paper, scissors first to five wins! ⭐️ 
 
 ![screenshot](images/screenshot.png)
 
