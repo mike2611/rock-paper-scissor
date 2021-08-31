@@ -14,7 +14,7 @@
 - VSCode
 
 ## Live Demo
-Link -> https://mike2611.github.io/rockPaperScissor/
+Link -> https://mike2611.github.io/rock-paper-scissor/
 
 ## Authors
 
